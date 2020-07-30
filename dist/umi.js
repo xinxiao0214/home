@@ -49,7 +49,7 @@
     (n.o = function(e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (n.p = '/'),
+    (n.p = './'),
     n((n.s = 0));
 })({
   '++zV': function(e, t, n) {
@@ -8697,7 +8697,8 @@
           -1 === e.indexOf('Mobile Safari') ||
           -1 !== e.indexOf('Chrome') ||
           -1 !== e.indexOf('Windows Phone')) &&
-        window.history && 'pushState' in window.history
+        window.history &&
+        'pushState' in window.history
       );
     }
     function P() {
@@ -14082,14 +14083,14 @@
       n('VWci');
     var r = n('bCY9');
     var o = n('YS25'),
-      i = { basename: '/' };
+      i = { basename: './' };
     window.routerBase && (i.basename = window.routerBase);
     var a = Object({ NODE_ENV: 'production' }).__IS_SERVER
         ? null
-        : Object(o['a'])(i),
+        : Object(o['b'])(i),
       u = function() {
         var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-        return e || (a = Object(o['a'])(i)), a;
+        return e || (a = Object(o['b'])(i)), a;
       },
       l = n('LtsZ'),
       c = n('zlVK'),
@@ -15868,8 +15869,8 @@
             ? 0 === o.type
             : !r &&
               2 < t.length &&
-                ('o' === t[0] || 'O' === t[0]) &&
-                ('n' === t[1] || 'N' === t[1]);
+              ('o' === t[0] || 'O' === t[0]) &&
+              ('n' === t[1] || 'N' === t[1]);
       i ||
         ($(t, n, o, r) && (n = null),
         r || null === o
@@ -18606,7 +18607,8 @@
           ? e.shouldComponentUpdate(r, i, a)
           : !t.prototype ||
             !t.prototype.isPureReactComponent ||
-            !no(n, r) || !no(o, i)
+            !no(n, r) ||
+            !no(o, i)
       );
     }
     function Li(e, t, n) {
