@@ -14,9 +14,6 @@
 #mock
 /mock
 
-# production
-/dist
-
 # misc
 .DS_Store
 
